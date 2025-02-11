@@ -1,0 +1,14 @@
+name: segment-anything-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - git+https://github.com/facebookresearch/segment-anything.git
+      - torch
+      - torchvision
+      - torchaudio
+      - opencv-python
+      - supervision
